@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,*{
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown{
+            margin: 50px;
+            border: 1px solid gray;
+            width:fit-content;
+            background-color:#000;
+            color: #fff;
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown .dropdown-item{
+            display: flex;
+            align-items: center;
+        }
+        .dropdown .dropdown-item img{
+            width: 20px;
+            margin-left: 10px;
+        }
+        .dropdown .dropdown-section{
+            display: none;
+            position: absolute;
+            box-shadow: rgba(0, 0, 0, 0.24)0px 3px 8px;
+        }
+        .dropdown:hover .dropdown-section{
+            display: block;
+
+        }
+        .dropdown .dropdown-section a{
+            padding: 10px;
+            border-bottom:1px solid red;
+            display: flex;
+            cursor: pointer;
+            color: black 
+        
+        }
+         a:hover{
+            background-color: red;
+            color: black;     
+         }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="dropdown-item">
+            <p>Dropdown</p>
+            <img src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png">
+        </div>
+        <div class="dropdown-section">
+            <a>Download</a>
+            <a>Delete</a>
+        </div>
+    </div>
+</body>
+</html>
